@@ -8,100 +8,78 @@
         android:orientation="vertical"
         android:padding="16dp">
 
-        <!-- ImageView -->
         <ImageView
-            android:id="@+id/imageView"
             android:layout_width="100dp"
             android:layout_height="100dp"
             android:layout_gravity="center"
-            android:background="@drawable/apple"
-            android:contentDescription="ImageView"
-            android:padding="8dp" />
+            android:src="@drawable/apple"
+            android:contentDescription="ImageView" />
 
-        <!-- Full Name -->
         <EditText
-            android:id="@+id/fullName"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
+            android:id="@+id/etFullName"
             android:hint="Full Name"
-            android:inputType="textPersonName"
-            android:layout_marginTop="16dp" />
-
-        <!-- Email -->
-        <EditText
-            android:id="@+id/email"
             android:layout_width="match_parent"
-            android:layout_height="wrap_content"
+            android:layout_height="wrap_content" />
+
+        <EditText
+            android:id="@+id/etEmail"
             android:hint="Email"
-            android:inputType="textEmailAddress"
-            android:layout_marginTop="8dp" />
-
-        <!-- Password -->
-        <EditText
-            android:id="@+id/password"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:hint="Password"
-            android:inputType="textPassword"
-            android:layout_marginTop="8dp" />
+            android:inputType="textEmailAddress" />
 
-        <!-- Gender Radio Buttons -->
+        <EditText
+            android:id="@+id/etPassword"
+            android:hint="Password"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:inputType="textPassword" />
+
         <TextView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="Gender"
-            android:layout_marginTop="16dp" />
+            android:text="Gender" />
 
         <RadioGroup
-            android:id="@+id/genderGroup"
             android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:orientation="horizontal"
-            android:layout_marginTop="8dp">
+            android:layout_height="wrap_content">
 
             <RadioButton
-                android:id="@+id/male"
+                android:id="@+id/radioMale"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:text="Male" />
 
             <RadioButton
-                android:id="@+id/female"
+                android:id="@+id/radioFemale"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:text="Female" />
         </RadioGroup>
 
-        <!-- Country Dropdown -->
-        <AutoCompleteTextView
-            android:id="@+id/countryDropdown"
+        <Spinner
+            android:id="@+id/spinnerCountry"
             android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:hint="Country Dropdown"
-            android:layout_marginTop="16dp" />
+            android:layout_height="wrap_content" />
 
-        <!-- AutoComplete TextView -->
         <AutoCompleteTextView
-            android:id="@+id/autocompleteTextView"
+            android:id="@+id/etAutocompleteCity"
+            android:hint="Country"
             android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:hint="AutoCompleteTextView"
-            android:layout_marginTop="8dp" />
+            android:layout_height="wrap_content" />
 
-        <!-- Checkbox -->
         <CheckBox
-            android:id="@+id/termsCheckBox"
+            android:id="@+id/checkBoxTerms"
+            android:text="I agree to terms and conditions"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+
+        <Button
+            android:id="@+id/btnSubmit"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="I agree to terms and conditions"
-            android:layout_marginTop="16dp" />
-
-        <!-- Submit Button -->
-        <Button
-            android:id="@+id/submitButton"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
             android:text="Submit"
-            android:layout_marginTop="16dp" />
+            android:layout_gravity="center" />
+
     </LinearLayout>
 </ScrollView>
